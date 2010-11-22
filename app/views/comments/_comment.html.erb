@@ -1,0 +1,10 @@
+  <p>
+	On <%=comment.updated_at%> &nbsp; <%= comment.commenter %>
+  	<b> said:</b>
+	<%= comment.body%>
+  </p>
+  <p>
+  	<%= link_to "Destroy comment", [comment.post, comment],
+		:confirm => "Are you sure?",
+		:method => :delete %>
+  </p>
